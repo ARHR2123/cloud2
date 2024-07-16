@@ -11,7 +11,7 @@ module.exports = {
       host:'127.0.0.1',
       user:'root',
       password:'',
-      database:'cloud2'
+      database:'cloudrene'
 
     },
     migrations:{

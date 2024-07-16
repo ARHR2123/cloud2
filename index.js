@@ -7,7 +7,7 @@ const routers = require('./routes'); // llamado de rutas (obtener conexión)
 // Declarar una variable
 
 const app = express(); // creamos una nueva instancia
-const port = 3000; // Puerto de salida, generalmente trabaja con el puerto 3000
+const port = 3050; // Puerto de salida, generalmente trabaja con el puerto 3000
 
 // tipo de datos que vamos a utilizar
 
