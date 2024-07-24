@@ -1,6 +1,7 @@
 // importar librerias 
 
-const express = require('express') // Framework de desarrollo
+const express = require('express'); // Framework de desarrollo
+const cors = require('cors');
 const knex = require('./db'); //llamado a configuracion de la carpeta db
 const routers = require('./routes'); // llamado de rutas (obtener conexión)
 
@@ -11,9 +12,11 @@ const port = 3050; // Puerto de salida, generalmente trabaja con el puerto 3000
 
 // tipo de datos que vamos a utilizar
 
+app.use(cors()); // Habilita CORS para todas las rutas
+
 app.use(express.json()); // configurar tipo de dato json
-app.use('/api', routers); // configura la url base y rutas
+app.use('/api', routers) // configura la url base y rutas
 
 app.listen(port, () => {
     console.log(`Servidor corriendo en el puerto ${port} con éxito`)
-})
+});

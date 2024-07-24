@@ -8,10 +8,10 @@ module.exports = {
   development: {
     client: 'mysql2',
     connection: {
-      host:'127.0.0.1',
+      host:'localhost',
       user:'root',
       password:'',
-      database:'cloudrene'
+      database:'cloud2'
 
     },
     migrations:{
